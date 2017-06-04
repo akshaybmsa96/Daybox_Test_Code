@@ -138,7 +138,7 @@ public class DbtaskItemFull extends AsyncTask<String,Void,String>
                 }
                 i.putStringArrayListExtra("logo",buylogo);
                 i.putStringArrayListExtra("prices",allprice);
-                i.putStringArrayListExtra("link",buylink);
+                i.putStringArrayListExtra("links",buylink);
 
                 ctx.startActivity(i);
                 mProgress.dismiss();

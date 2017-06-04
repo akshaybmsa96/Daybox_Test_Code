@@ -47,9 +47,9 @@ public class ItemFull extends AppCompatActivity {
         name=getIntent().getStringExtra("name");
         imgurl=getIntent().getStringExtra("img_url");
         price=getIntent().getStringExtra("price");
-
         link=getIntent().getStringExtra("link");
-        buylink=getIntent().getStringArrayListExtra("link");
+
+        buylink=getIntent().getStringArrayListExtra("links");
         logolink=getIntent().getStringArrayListExtra("logo");
         buyprice=getIntent().getStringArrayListExtra("prices");
 
