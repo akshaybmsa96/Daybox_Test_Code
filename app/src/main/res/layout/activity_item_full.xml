@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akki.daybox_code.ItemFull">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarframe">
+
+        <include android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar"></include>
+    </FrameLayout>
+
+     <RelativeLayout
+         android:layout_below="@+id/toolbarframe"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:background="#c0c0c0"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageViewid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view1" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.25dp"
+        android:layout_marginTop="5dp"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/typetextid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:id="@+id/imageViewid"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="2dp"
+        android:id="@+id/recyclerviewid"
+        android:layout_below="@+id/typetextid"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:id="@+id/pricetextid"
+        android:layout_below="@+id/itemtextid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typetextid"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/pricetextid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="10dp"
+        android:id="@+id/itemtextid"
+        android:layout_below="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+     </RelativeLayout>
+
+</RelativeLayout>
